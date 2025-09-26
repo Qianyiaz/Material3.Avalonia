@@ -18,8 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Material3.Avalonia.Expressive\Material3.Avalonia.Expressive.csproj" />
-      <ProjectReference Include="..\Material3.Avalonia.Standard\Material3.Avalonia.Standard.csproj" />
+        <ProjectReference Include="..\Material3.Avalonia\Material3.Avalonia.csproj" />
     </ItemGroup>
 
 </Project>
