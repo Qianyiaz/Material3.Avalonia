@@ -51,9 +51,9 @@ internal static class BaselineData
 
     public static readonly Dictionary<int, string> Error = new()
     {
-        { 0, "#FF000000" }, {10, "#FF410E0B"}, {20, "#FF601410"}, {30, "#FF8C1D18"},
-        {40, "#FFB3261E"}, {50, "#FFDC362E"}, {60, "#FFE46962"}, {70, "#FFEC928E"},
-        {80, "#FFF2B8B5"}, {90, "#FFF9DEDC"}, {95, "#FFFCEEEE"}, {99, "#FFFFFBF9"},
+        { 0, "#FF000000" }, {10, "#FF410004"}, {20, "#FF690005"}, {30, "#FF93000A"},
+        {40, "#FFBA1A1A"}, {50, "#FFDE3730"}, {60, "#FFFF5449"}, {70, "#FFFF897D"},
+        {80, "#FFFFB4AB"}, {90, "#FFFFDAD6"}, {95, "#FFFFEDEA"}, {99, "#FFFFFBFB"},
         {100,"#FFFFFFFF"}
     };
 

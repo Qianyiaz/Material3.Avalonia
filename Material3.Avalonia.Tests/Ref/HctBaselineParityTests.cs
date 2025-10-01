@@ -54,9 +54,8 @@ public class HctBaselineParityTests
         IReadOnlyDictionary<int, string> baseline,
         PaletteKind kind)
     {
-        /*
         // Arrange
-        var refs = HctRefGenerator.GenerateFromSeed(Seed, options);
+        var refs = HctRefGenerator.GenerateFromSeed(Seed);
 
         // Act & Assert
         foreach (var (tone, hex) in baseline.OrderBy(kv => kv.Key))
@@ -68,7 +67,6 @@ public class HctBaselineParityTests
                 .Should().BeLessThanOrEqualTo(MaxDelta,
                     $"{kind}@{tone} should match baseline within {MaxDelta} per-channel (got {actual} vs {expected})");
         }
-        */
     }
 
     /// <summary>Returns the maximum absolute per-channel sRGB difference.</summary>

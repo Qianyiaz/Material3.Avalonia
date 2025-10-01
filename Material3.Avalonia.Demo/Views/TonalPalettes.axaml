@@ -38,7 +38,7 @@
         </Style>
     </UserControl.Styles>
     
-    <Grid RowDefinitions="Auto Auto Auto Auto Auto"
+    <Grid RowDefinitions="Auto Auto Auto Auto Auto Auto"
           ColumnDefinitions="Auto *"
           Margin="12">
         <TextBlock Grid.Row="0" Grid.Column="0" Classes="row-label" Text="Primary" />
@@ -129,6 +129,24 @@
           <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefNeutralVariant98Brush}" Foreground="Black" />
           <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefNeutralVariant99Brush}" Foreground="Black" />
           <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefNeutralVariant100Brush}" Foreground="Black" />
+        </UniformGrid>
+        
+        <TextBlock Grid.Row="5" Grid.Column="0" Classes="row-label" Text="Error"/>
+        <UniformGrid Grid.Row="5" Grid.Column="1" Columns="14" Rows="1">
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefError00Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefError10Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefError20Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefError30Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefError40Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefError50Brush}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefError60Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefError70Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefError80Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefError90Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefError95Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefError98Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefError99Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefError100Brush}" Foreground="Black" />
         </UniformGrid>
     </Grid>
 </UserControl>
