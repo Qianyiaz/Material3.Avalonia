@@ -11,7 +11,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Colors\Comp\" />
+      <Folder Include="Tokens\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Tokens\Color\Reference\RefTokens.Design.axaml" />
     </ItemGroup>
 
 </Project>

@@ -3,10 +3,10 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
 using Avalonia.Styling;
-using Material3.Avalonia.Colors.Ref;
-using Material3.Avalonia.Colors.Sys;
 using Material3.Avalonia.Demo.ViewModels;
 using Material3.Avalonia.Demo.Views;
+using Material3.Avalonia.Tokens.Color.Reference;
+using Material3.Avalonia.Tokens.Color.System;
 
 namespace Material3.Avalonia.Demo;
 

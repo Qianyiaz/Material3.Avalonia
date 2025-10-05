@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Avalonia.Media;
 using FluentAssertions;
-using Material3.Avalonia.Colors.Ref;
 using Material3.Avalonia.Tests.Ref;
+using Material3.Avalonia.Tokens.Color.Reference;
 using Xunit;
 
 namespace Material3.Avalonia.Tests.Ref;

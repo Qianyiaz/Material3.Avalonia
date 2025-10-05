@@ -5,7 +5,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceInclude Source="avares://Material3.Avalonia/Colors/Ref/RefTokens.Design.axaml" />
+                <ResourceInclude Source="avares://Material3.Avalonia/Tokens/Color/Reference/RefTokens.Design.axaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
