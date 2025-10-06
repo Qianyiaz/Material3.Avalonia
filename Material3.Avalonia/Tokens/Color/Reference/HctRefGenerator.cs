@@ -92,21 +92,6 @@ public static class HctRefGenerator
         return new TonalPalettes(primary, secondary, tertiary, neutral, neutralV, error);
     }
 
-    /// <summary>
-    /// Convenience API that returns both color and brush resources keyed as MdRef… for direct use in Avalonia.
-    /// </summary>
-    /// <param name="seed">Seed color in sRGB.</param>
-    /// <param name="vcFactory">Viewing-conditions factory; defaults to sRGB/Average.</param>
-    /// <returns>(colors, brushes) resource dictionaries.</returns>
-    public static (ResourceDictionary Colors, ResourceDictionary Brushes)
-        GenerateRefResources(global::Avalonia.Media.Color seed, IViewingConditionsFactory? vcFactory = null)
-    {
-        var refs = GenerateFromSeed(seed, vcFactory);
-        var colorRd = refs.ToColorResourceDictionary();
-        var brushRd = refs.ToBrushResourceDictionary();
-        return (colorRd, brushRd);
-    }
-
     private static TonalPalette BuildPalette(PaletteKind kind, IHctConverter hct, double hue, double chroma, int[] tones)
     {
         var entries = new Dictionary<int, global::Avalonia.Media.Color>(tones.Length);

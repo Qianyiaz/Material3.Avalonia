@@ -43,110 +43,110 @@
           Margin="12">
         <TextBlock Grid.Row="0" Grid.Column="0" Classes="row-label" Text="Primary" />
         <UniformGrid Grid.Row="0" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefPrimary00Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefPrimary10Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefPrimary20Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefPrimary30Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefPrimary40Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefPrimary50Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefPrimary60Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefPrimary70Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefPrimary80Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefPrimary90Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefPrimary95Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefPrimary98Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefPrimary99Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefPrimary100Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefPrimary00Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefPrimary10Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefPrimary20Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefPrimary30Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefPrimary40Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefPrimary50Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefPrimary60Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefPrimary70Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefPrimary80Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefPrimary90Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefPrimary95Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefPrimary98Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefPrimary99Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefPrimary100Color}" Foreground="Black" />
         </UniformGrid>
 
         <TextBlock Grid.Row="1" Grid.Column="0" Classes="row-label" Text="Secondary"/>
         <UniformGrid Grid.Row="1" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefSecondary00Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefSecondary10Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefSecondary20Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefSecondary30Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefSecondary40Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefSecondary50Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefSecondary60Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefSecondary70Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefSecondary80Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefSecondary90Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefSecondary95Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefSecondary98Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefSecondary99Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefSecondary100Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefSecondary00Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefSecondary10Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefSecondary20Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefSecondary30Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefSecondary40Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefSecondary50Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefSecondary60Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefSecondary70Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefSecondary80Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefSecondary90Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefSecondary95Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefSecondary98Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefSecondary99Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefSecondary100Color}" Foreground="Black" />
         </UniformGrid>
 
         <TextBlock Grid.Row="2" Grid.Column="0" Classes="row-label" Text="Tertiary"/>
         <UniformGrid Grid.Row="2" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefTertiary00Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefTertiary10Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefTertiary20Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefTertiary30Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefTertiary40Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefTertiary50Brush}"  Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefTertiary60Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefTertiary70Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefTertiary80Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefTertiary90Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefTertiary95Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefTertiary98Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefTertiary99Brush}"  Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefTertiary100Brush}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefTertiary00Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefTertiary10Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefTertiary20Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefTertiary30Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefTertiary40Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefTertiary50Color}"  Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefTertiary60Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefTertiary70Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefTertiary80Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefTertiary90Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefTertiary95Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefTertiary98Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefTertiary99Color}"  Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefTertiary100Color}"  Foreground="Black" />
         </UniformGrid>
 
         <TextBlock Grid.Row="3" Grid.Column="0" Classes="row-label" Text="Neutral"/>
         <UniformGrid Grid.Row="3" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefNeutral00Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefNeutral10Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefNeutral20Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefNeutral30Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefNeutral40Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefNeutral50Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefNeutral60Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefNeutral70Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefNeutral80Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefNeutral90Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefNeutral95Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefNeutral98Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefNeutral99Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefNeutral100Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefNeutral00Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefNeutral10Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefNeutral20Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefNeutral30Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefNeutral40Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefNeutral50Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefNeutral60Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefNeutral70Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefNeutral80Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefNeutral90Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefNeutral95Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefNeutral98Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefNeutral99Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefNeutral100Color}" Foreground="Black" />
         </UniformGrid>
 
         <TextBlock Grid.Row="4" Grid.Column="0" Classes="row-label" Text="Neutral variant"/>
         <UniformGrid Grid.Row="4" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefNeutralVariant00Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefNeutralVariant10Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefNeutralVariant20Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefNeutralVariant30Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefNeutralVariant40Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefNeutralVariant50Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefNeutralVariant60Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefNeutralVariant70Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefNeutralVariant80Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefNeutralVariant90Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefNeutralVariant95Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefNeutralVariant98Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefNeutralVariant99Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefNeutralVariant100Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefNeutralVariant00Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefNeutralVariant10Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefNeutralVariant20Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefNeutralVariant30Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefNeutralVariant40Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefNeutralVariant50Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefNeutralVariant60Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefNeutralVariant70Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefNeutralVariant80Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefNeutralVariant90Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefNeutralVariant95Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefNeutralVariant98Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefNeutralVariant99Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefNeutralVariant100Color}" Foreground="Black" />
         </UniformGrid>
         
         <TextBlock Grid.Row="5" Grid.Column="0" Classes="row-label" Text="Error"/>
         <UniformGrid Grid.Row="5" Grid.Column="1" Columns="14" Rows="1">
-          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefError00Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefError10Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefError20Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefError30Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefError40Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefError50Brush}" Foreground="White" />
-          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefError60Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefError70Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefError80Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefError90Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefError95Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefError98Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefError99Brush}" Foreground="Black" />
-          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefError100Brush}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="0"   Background="{DynamicResource MdRefError00Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="10"  Background="{DynamicResource MdRefError10Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="20"  Background="{DynamicResource MdRefError20Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="30"  Background="{DynamicResource MdRefError30Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="40"  Background="{DynamicResource MdRefError40Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="50"  Background="{DynamicResource MdRefError50Color}" Foreground="White" />
+          <ContentControl Classes="swatch" Content="60"  Background="{DynamicResource MdRefError60Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="70"  Background="{DynamicResource MdRefError70Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="80"  Background="{DynamicResource MdRefError80Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="90"  Background="{DynamicResource MdRefError90Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="95"  Background="{DynamicResource MdRefError95Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="98"  Background="{DynamicResource MdRefError98Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="99"  Background="{DynamicResource MdRefError99Color}" Foreground="Black" />
+          <ContentControl Classes="swatch" Content="100" Background="{DynamicResource MdRefError100Color}" Foreground="Black" />
         </UniformGrid>
     </Grid>
 </UserControl>

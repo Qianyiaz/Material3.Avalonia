@@ -1,0 +1,349 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Material3.Avalonia.Demo.Views.SchemeColors">
+    <UserControl.Styles>
+        <Style Selector="ContentControl.swatch">
+            <Setter Property="Padding" Value="12 8" />
+            <Setter Property="VerticalContentAlignment" Value="Top" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="{TemplateBinding CornerRadius}"
+                            Margin="{TemplateBinding Margin}"
+                            Padding="{TemplateBinding Padding}"
+                            HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalAlignment}"
+                            Height="{TemplateBinding Height}">
+                        <TextBlock Text="{TemplateBinding Content}"
+                                   Foreground="{TemplateBinding Foreground}"
+                                   FontSize="12"
+                                   FontWeight="SemiBold"
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                   VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid ColumnDefinitions="200 4 200 4 200 16 200"
+          RowDefinitions="Auto 16 Auto 16 Auto"
+          Margin="12">
+        <Grid Grid.Row="0"
+              Grid.Column="0"
+              RowDefinitions="50 40 50 40">
+            <ContentControl Grid.Row="0"
+                            Classes="swatch"
+                            Content="Primary"
+                            Background="{DynamicResource MdSysColorPrimaryBrush}"
+                            Foreground="{DynamicResource MdSysColorOnPrimaryBrush}" />
+            <ContentControl Grid.Row="1"
+                            Classes="swatch"
+                            Content="On Primary"
+                            Background="{DynamicResource MdSysColorOnPrimaryBrush}"
+                            Foreground="{DynamicResource MdSysColorPrimaryBrush}" />
+            <ContentControl Grid.Row="2"
+                            Classes="swatch"
+                            Content="Primary Container"
+                            Background="{DynamicResource MdSysColorPrimaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorOnPrimaryContainerBrush}" />
+            <ContentControl Grid.Row="3"
+                            Classes="swatch"
+                            Content="On Primary Container"
+                            Background="{DynamicResource MdSysColorOnPrimaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorPrimaryContainerBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="0"
+              Grid.Column="2"
+              RowDefinitions="50 40 50 40">
+            <ContentControl Grid.Row="0"
+                            Classes="swatch"
+                            Content="Secondary"
+                            Background="{DynamicResource MdSysColorSecondaryBrush}"
+                            Foreground="{DynamicResource MdSysColorOnSecondaryBrush}" />
+            <ContentControl Grid.Row="1"
+                            Classes="swatch"
+                            Content="On Secondary"
+                            Background="{DynamicResource MdSysColorOnSecondaryBrush}"
+                            Foreground="{DynamicResource MdSysColorSecondaryBrush}" />
+            <ContentControl Grid.Row="2"
+                            Classes="swatch"
+                            Content="Secondary Container"
+                            Background="{DynamicResource MdSysColorSecondaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorOnSecondaryContainerBrush}" />
+            <ContentControl Grid.Row="3"
+                            Classes="swatch"
+                            Content="On Secondary Container"
+                            Background="{DynamicResource MdSysColorOnSecondaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorSecondaryContainerBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="0"
+              Grid.Column="4"
+              RowDefinitions="50 40 50 40">
+            <ContentControl Grid.Row="0"
+                            Classes="swatch"
+                            Content="Tertiary"
+                            Background="{DynamicResource MdSysColorTertiaryBrush}"
+                            Foreground="{DynamicResource MdSysColorOnTertiaryBrush}" />
+            <ContentControl Grid.Row="1"
+                            Classes="swatch"
+                            Content="On Tertiary"
+                            Background="{DynamicResource MdSysColorOnTertiaryBrush}"
+                            Foreground="{DynamicResource MdSysColorTertiaryBrush}" />
+            <ContentControl Grid.Row="2"
+                            Classes="swatch"
+                            Content="Tertiary Container"
+                            Background="{DynamicResource MdSysColorTertiaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorOnTertiaryContainerBrush}" />
+            <ContentControl Grid.Row="3"
+                            Classes="swatch"
+                            Content="On Tertiary Container"
+                            Background="{DynamicResource MdSysColorOnTertiaryContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorTertiaryContainerBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="0"
+              Grid.Column="6"
+              RowDefinitions="50 40 50 40">
+            <ContentControl Grid.Row="0"
+                            Classes="swatch"
+                            Content="Error"
+                            Background="{DynamicResource MdSysColorErrorBrush}"
+                            Foreground="{DynamicResource MdSysColorOnErrorBrush}" />
+            <ContentControl Grid.Row="1"
+                            Classes="swatch"
+                            Content="On Error"
+                            Background="{DynamicResource MdSysColorOnErrorBrush}"
+                            Foreground="{DynamicResource MdSysColorErrorBrush}" />
+            <ContentControl Grid.Row="2"
+                            Classes="swatch"
+                            Content="Error Container"
+                            Background="{DynamicResource MdSysColorErrorContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorOnErrorContainerBrush}" />
+            <ContentControl Grid.Row="3"
+                            Classes="swatch"
+                            Content="On Error Container"
+                            Background="{DynamicResource MdSysColorOnErrorContainerBrush}"
+                            Foreground="{DynamicResource MdSysColorErrorContainerBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Grid.Column="0"
+              RowDefinitions="50 40 40"
+              ColumnDefinitions="* *">
+            <ContentControl Grid.Row="0"
+                            Grid.Column="0"
+                            Classes="swatch"
+                            Content="Primary Fixed"
+                            Background="{DynamicResource MdSysColorPrimaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorOnPrimaryFixedBrush}" />
+            <ContentControl Grid.Row="0"
+                            Grid.Column="1"
+                            Classes="swatch"
+                            Content="Primary Fixed Dim"
+                            Background="{DynamicResource MdSysColorPrimaryFixedDimBrush}"
+                            Foreground="{DynamicResource MdSysColorOnPrimaryFixedVariantBrush}" />
+            <ContentControl Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Primary Fixed"
+                            Background="{DynamicResource MdSysColorOnPrimaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorPrimaryFixedBrush}" />
+            <ContentControl Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Primary Fixed Variant"
+                            Background="{DynamicResource MdSysColorOnPrimaryFixedVariantBrush}"
+                            Foreground="{DynamicResource MdSysColorPrimaryFixedDimBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Grid.Column="2"
+              RowDefinitions="50 40 40"
+              ColumnDefinitions="* *">
+            <ContentControl Grid.Row="0"
+                            Grid.Column="0"
+                            Classes="swatch"
+                            Content="Secondary Fixed"
+                            Background="{DynamicResource MdSysColorSecondaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorOnSecondaryFixedBrush}" />
+            <ContentControl Grid.Row="0"
+                            Grid.Column="1"
+                            Classes="swatch"
+                            Content="Secondary Fixed Dim"
+                            Background="{DynamicResource MdSysColorSecondaryFixedDimBrush}"
+                            Foreground="{DynamicResource MdSysColorOnSecondaryFixedVariantBrush}" />
+            <ContentControl Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Secondary Fixed"
+                            Background="{DynamicResource MdSysColorOnSecondaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorSecondaryFixedBrush}" />
+            <ContentControl Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Secondary Fixed Variant"
+                            Background="{DynamicResource MdSysColorOnSecondaryFixedVariantBrush}"
+                            Foreground="{DynamicResource MdSysColorSecondaryFixedDimBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Grid.Column="4"
+              RowDefinitions="50 40 40"
+              ColumnDefinitions="* *">
+            <ContentControl Grid.Row="0"
+                            Grid.Column="0"
+                            Classes="swatch"
+                            Content="Tertiary Fixed"
+                            Background="{DynamicResource MdSysColorTertiaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorOnTertiaryFixedBrush}" />
+            <ContentControl Grid.Row="0"
+                            Grid.Column="1"
+                            Classes="swatch"
+                            Content="Tertiary Fixed Dim"
+                            Background="{DynamicResource MdSysColorTertiaryFixedDimBrush}"
+                            Foreground="{DynamicResource MdSysColorOnTertiaryFixedVariantBrush}" />
+            <ContentControl Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Tertiary Fixed"
+                            Background="{DynamicResource MdSysColorOnTertiaryFixedBrush}"
+                            Foreground="{DynamicResource MdSysColorTertiaryFixedBrush}" />
+            <ContentControl Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Classes="swatch"
+                            Content="On Tertiary Fixed Variant"
+                            Background="{DynamicResource MdSysColorOnTertiaryFixedVariantBrush}"
+                            Foreground="{DynamicResource MdSysColorTertiaryFixedDimBrush}" />
+        </Grid>
+
+        <Grid Grid.Row="4"
+              Grid.Column="0"
+              Grid.ColumnSpan="5"
+              RowDefinitions="* 4 * 4 40">
+            <Grid Grid.Row="0"
+                  Grid.ColumnDefinitions="* * * *">
+                <ContentControl Grid.Column="0"
+                                Classes="swatch"
+                                Content="Surface Dim"
+                                Background="{DynamicResource MdSysColorSurfaceDimBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="1"
+                                Classes="swatch"
+                                Content="Surface"
+                                Background="{DynamicResource MdSysColorSurfaceBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="2"
+                                Classes="swatch"
+                                Content="Surface Bright"
+                                Background="{DynamicResource MdSysColorSurfaceBrightBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="3"
+                                Classes="swatch"
+                                Content="Surface Variant"
+                                Background="{DynamicResource MdSysColorSurfaceVariantBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceVariantBrush}" />
+            </Grid>
+            
+            <Grid Grid.Row="2"
+                  Grid.ColumnDefinitions="* * * * *">
+                <ContentControl Grid.Column="0"
+                                Classes="swatch"
+                                Content="Surface Container Lowest"
+                                Background="{DynamicResource MdSysColorSurfaceContainerLowestBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="1"
+                                Classes="swatch"
+                                Content="Surface Container Low"
+                                Background="{DynamicResource MdSysColorSurfaceContainerLowBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="2"
+                                Classes="swatch"
+                                Content="Surface Container"
+                                Background="{DynamicResource MdSysColorSurfaceContainerBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="3"
+                                Classes="swatch"
+                                Content="Surface Container High"
+                                Background="{DynamicResource MdSysColorSurfaceContainerHighBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+                <ContentControl Grid.Column="4"
+                                Classes="swatch"
+                                Content="Surface Container Highest"
+                                Background="{DynamicResource MdSysColorSurfaceContainerHighestBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+            </Grid>
+            
+            <Grid Grid.Row="4"
+                  Grid.ColumnDefinitions="* * * *">
+                <ContentControl Grid.Column="0"
+                                Classes="swatch"
+                                Content="On Surface"
+                                Background="{DynamicResource MdSysColorOnSurfaceBrush}"
+                                Foreground="{DynamicResource MdSysColorSurfaceBrush}" />
+                <ContentControl Grid.Column="1"
+                                Classes="swatch"
+                                Content="On Surface Variant"
+                                Background="{DynamicResource MdSysColorOnSurfaceVariantBrush}"
+                                Foreground="{DynamicResource MdSysColorSurfaceVariantBrush}" />
+                <ContentControl Grid.Column="2"
+                                Classes="swatch"
+                                Content="Outline"
+                                Background="{DynamicResource MdSysColorOutlineBrush}"
+                                Foreground="{DynamicResource MdSysColorSurfaceBrush}" />
+                <ContentControl Grid.Column="3"
+                                Classes="swatch"
+                                Content="Outline Variant"
+                                Background="{DynamicResource MdSysColorOutlineVariantBrush}"
+                                Foreground="{DynamicResource MdSysColorOnSurfaceBrush}" />
+            </Grid>
+        </Grid>
+        
+        <Grid Grid.Row="4"
+              Grid.Column="6"
+              RowDefinitions="50 40 40 16 40">
+            <ContentControl Grid.Row="0"
+                            Classes="swatch"
+                            Content="Inverse Surface"
+                            Background="{DynamicResource MdSysColorInverseSurfaceBrush}"
+                            Foreground="{DynamicResource MdSysColorInverseOnSurfaceBrush}" />
+            <ContentControl Grid.Row="1"
+                            Classes="swatch"
+                            Content="Inverse On Surface"
+                            Background="{DynamicResource MdSysColorInverseOnSurfaceBrush}"
+                            Foreground="{DynamicResource MdSysColorInverseSurfaceBrush}" />
+            <ContentControl Grid.Row="2"
+                            Classes="swatch"
+                            Content="Inverse Primary"
+                            Background="{DynamicResource MdSysColorInversePrimaryBrush}"
+                            Foreground="{DynamicResource MdSysColorInverseSurfaceBrush}" />
+            
+            <Grid Grid.Row="4"
+                  ColumnDefinitions="* 16 *">
+                <ContentControl Grid.Column="0"
+                                Classes="swatch"
+                                Content="Scrim"
+                                Background="{DynamicResource MdSysColorScrimBrush}"
+                                Foreground="White" />
+                <ContentControl Grid.Column="2"
+                                Classes="swatch"
+                                Content="Shadow"
+                                Background="{DynamicResource MdSysColorShadowBrush}"
+                                Foreground="White" />
+            </Grid>
+        </Grid>
+    </Grid>
+</UserControl>

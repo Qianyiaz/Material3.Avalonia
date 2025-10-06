@@ -122,16 +122,6 @@ public sealed class TonalPalettes(
         WriteRefColorsTo(dict);
         return dict;
     }
-
-    /// <summary>
-    /// Creates a <see cref="ResourceDictionary"/> with all "MdRef…Brush" entries.
-    /// </summary>
-    public ResourceDictionary ToBrushResourceDictionary()
-    {
-        var dict = new ResourceDictionary();
-        WriteRefBrushesTo(dict);
-        return dict;
-    }
     
     /// <summary>
     /// Enumerates all (resourceKey, color) pairs that would be exported as "MdRef…Color".

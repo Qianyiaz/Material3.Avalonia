@@ -17,16 +17,14 @@ public partial class App : Application
         AvaloniaXamlLoader.Load(this);
         
         var seed = Color.Parse("#6750A4");
-        var (refColors, refBrushes) = HctRefGenerator.GenerateRefResources(seed);
         
-        var refs = HctRefGenerator.GenerateFromSeed(seed);
-        
-        Current!.Resources.MergedDictionaries.Add(refColors);
-        Current!.Resources.MergedDictionaries.Add(refBrushes);
+        var tonalPalettes = HctRefGenerator.GenerateFromSeed(seed);
+        var refColorsRd = tonalPalettes.ToColorResourceDictionary();
+        Current!.Resources.MergedDictionaries.Add(refColorsRd);
         
         var options = new ColorSchemeOptions(ThemeVariant.Light, ContrastLevel.Standard, MdStyle.Standard);
-        var sys = ColorSchemeGenerator.Build(refs, options);
-        Current!.Resources.MergedDictionaries.Add(sys);
+        var sysColorsRd = ColorSchemeGenerator.Build(tonalPalettes, options);
+        Current!.Resources.MergedDictionaries.Add(sysColorsRd);
     }
 
     public override void OnFrameworkInitializationCompleted()

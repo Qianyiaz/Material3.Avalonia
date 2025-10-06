@@ -24,9 +24,6 @@ internal static class Srgb
         return (Q(r), Q(g), Q(b));
     }
 
-    // sRGB (D65) linear RGB ↔ XYZ (relative, Y_n=100)
-    private const double Xr = 95.047, Yr = 100.0, Zr = 108.883;
-
     public static (double X, double Y, double Z) LinearRgbToXyz(double r, double g, double b)
     {
         // IEC 61966-2-1 with D65 white, scaled to Y=100
