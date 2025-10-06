@@ -1,4 +1,3 @@
-using Material3.Avalonia.Colors.Conversion;
 using Material3.Avalonia.ColorScience.Models;
 using Material3.Avalonia.ColorScience.Viewing;
 
@@ -17,7 +16,7 @@ public sealed class Cam16Converter : ICam16Converter
     public Cam16Color ToCam16(XyzColor xyz, IViewingConditions vc)
     {
         // Step 1: cone responses
-        var (R, G, B) = Cam16Math.M16_XyzToRgb(xyz.X, xyz.Y, xyz.Z);
+        var (R, G, B) = Cam16Math.M16XyzToRgb(xyz.X, xyz.Y, xyz.Z);
 
         // Step 2: D-adaptation in cone space
         var DR = Cam16Math.DFactor(vc.D, vc.White.Y, Cam16Math.Rw(vc.White));
@@ -90,7 +89,7 @@ public sealed class Cam16Converter : ICam16Converter
         var h = input.Hue;
 
         // Step 2*: e_t, A, p1', p2'
-        var et = 0.25 * (Math.Cos((h * Math.PI / 180.0) + 2.0) + 3.8);
+        var et = Cam16Hue.ComputeEccentricity(h);
         var A  = vc.Aw * Math.Pow(Math.Max(J, 0.0) / 100.0, 1.0 / (vc.C * vc.Z));
         var p1 = (50000.0 / 13.0) * vc.Nc * vc.Ncb * et;
         var p2 = A / vc.Nbb;
@@ -112,14 +111,14 @@ public sealed class Cam16Converter : ICam16Converter
         var (Rc, Gc, Bc) = Cam16Math.ResponseExpansion(R_a, G_a, B_a, vc.FL);
 
         // Step 6: undo D-adaptation
-        var (Rw, Gw, Bw) = Cam16Math.M16_XyzToRgb(vc.White.X, vc.White.Y, vc.White.Z);
+        var (Rw, Gw, Bw) = Cam16Math.M16XyzToRgb(vc.White.X, vc.White.Y, vc.White.Z);
         var DR = Cam16Math.DFactor(vc.D, vc.White.Y, Rw);
         var DG = Cam16Math.DFactor(vc.D, vc.White.Y, Gw);
         var DB = Cam16Math.DFactor(vc.D, vc.White.Y, Bw);
         var R = Rc / DR; var G = Gc / DG; var B = Bc / DB;
 
         // Step 7: RGB → XYZ
-        var (X, Y, Z) = Cam16Math.M16_RgbToXyz(R, G, B);
+        var (X, Y, Z) = Cam16Math.M16RgbToXyz(R, G, B);
         return new XyzColor(X, Y, Z);
     }
 

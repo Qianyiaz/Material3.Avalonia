@@ -17,12 +17,12 @@ internal static class Cam16Math
     private const double IM21 =  0.38752654, IM22 =  0.62144744, IM23 = -0.00897398;
     private const double IM31 = -0.01584150, IM32 = -0.03412294, IM33 =  1.04996444;
 
-    public static (double R, double G, double B) M16_XyzToRgb(double X, double Y, double Z) =>
+    public static (double R, double G, double B) M16XyzToRgb(double X, double Y, double Z) =>
         (M11 * X + M12 * Y + M13 * Z,
             M21 * X + M22 * Y + M23 * Z,
             M31 * X + M32 * Y + M33 * Z);
 
-    public static (double X, double Y, double Z) M16_RgbToXyz(double R, double G, double B) =>
+    public static (double X, double Y, double Z) M16RgbToXyz(double R, double G, double B) =>
         (IM11 * R + IM12 * G + IM13 * B,
             IM21 * R + IM22 * G + IM23 * B,
             IM31 * R + IM32 * G + IM33 * B);

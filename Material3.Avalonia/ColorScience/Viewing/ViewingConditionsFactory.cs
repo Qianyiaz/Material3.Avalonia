@@ -35,7 +35,7 @@ public sealed class ViewingConditionsFactory : IViewingConditionsFactory
         var z   = 1.48 + Math.Sqrt(n);
 
         // White → RGB (M16), D-adapt, response compression, A_w
-        var (Rw, Gw, Bw) = Cam16Math.M16_XyzToRgb(white.X, white.Y, white.Z);
+        var (Rw, Gw, Bw) = Cam16Math.M16XyzToRgb(white.X, white.Y, white.Z);
         var DR = Cam16Math.DFactor(D, white.Y, Rw);
         var DG = Cam16Math.DFactor(D, white.Y, Gw);
         var DB = Cam16Math.DFactor(D, white.Y, Bw);

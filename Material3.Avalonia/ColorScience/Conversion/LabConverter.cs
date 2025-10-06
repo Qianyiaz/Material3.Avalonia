@@ -1,4 +1,3 @@
-using Material3.Avalonia.Colors.Conversion;
 using Material3.Avalonia.ColorScience.Models;
 using Material3.Avalonia.ColorScience.Viewing;
 
@@ -59,7 +58,7 @@ public sealed class LabConverter(XyzColor convenienceWhite) : ILabConverter
     /// <inheritdoc/>
     public LabColor ArgbToLab(uint argb)
     {
-        var (R, G, B) = UnpackRgb(argb);
+        var (R, G, B) = Argb32.UnpackRgb(argb);
         var (r, g, b) = Srgb.ToLinear(R, G, B);
         var (X, Y, Z) = Srgb.LinearRgbToXyz(r, g, b); // D65, relative (Y≈100)
         return XyzToLab(new XyzColor(X, Y, Z), ConvenienceWhite);
@@ -70,23 +69,12 @@ public sealed class LabConverter(XyzColor convenienceWhite) : ILabConverter
     {
         var xyz = LabToXyz(lab, ConvenienceWhite);
         var (r, g, b) = Srgb.XyzToLinearRgb(xyz.X, xyz.Y, xyz.Z);
-        if (!InGamut(r, g, b))
+        if (!RgbGamut.InLinearGamut(r, g, b))
         {
             // simple clipping; gamut mapping strategies can be added later
-            r = Clamp01(r); g = Clamp01(g); b = Clamp01(b);
+            r = Math.Clamp(r, 0.0, 1.0); g = Math.Clamp(g, 0.0, 1.0); b = Math.Clamp(b, 0.0, 1.0);
         }
         var (R, G, B) = Srgb.FromLinear(r, g, b);
-        return PackRgb(R, G, B);
+        return Argb32.PackRgb(R, G, B);
     }
-    
-    private static bool InGamut(double r, double g, double b)
-        => r >= 0.0 && r <= 1.0 && g >= 0.0 && g <= 1.0 && b >= 0.0 && b <= 1.0;
-    
-    private static double Clamp01(double v) => v < 0 ? 0 : (v > 1 ? 1 : v);
-    
-    private static (byte R, byte G, byte B) UnpackRgb(uint argb)
-        => ((byte)((argb >> 16) & 0xFF), (byte)((argb >> 8) & 0xFF), (byte)(argb & 0xFF));
-    
-    private static uint PackRgb(byte R, byte G, byte B)
-        => 0xFF000000u | ((uint)R << 16) | ((uint)G << 8) | B;
 }

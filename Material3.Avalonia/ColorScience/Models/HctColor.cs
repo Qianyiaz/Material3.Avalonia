@@ -7,13 +7,13 @@ namespace Material3.Avalonia.ColorScience.Models;
 public readonly struct HctColor(double hue, double chroma, double tone)
 {
     /// <summary>Hue angle in degrees [0, 360).</summary>
-    public double Hue { get; } = ((hue % 360.0) + 360.0) % 360.0;
+    public double Hue { get; } = ColorScience.Hue.Normalize(hue);
 
     /// <summary>Chroma (>= 0).</summary>
-    public double Chroma { get; } = chroma < 0 ? 0 : chroma;
+    public double Chroma { get; } = Math.Max(0, chroma);
 
     /// <summary>Tone (CIE L*, 0..100).</summary>
-    public double Tone { get; } = tone < 0 ? 0 : (tone > 100 ? 100 : tone);
+    public double Tone { get; } = Math.Clamp(tone, 0.0, 100.0);
 
     public override string ToString() => $"HCT(h={Hue:F2}, c={Chroma:F2}, t(L*)={Tone:F2})";
 }

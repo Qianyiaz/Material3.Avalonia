@@ -1,4 +1,3 @@
-using Material3.Avalonia.Colors.Conversion;
 using Material3.Avalonia.ColorScience.Models;
 using Material3.Avalonia.ColorScience.Viewing;
 
@@ -9,11 +8,6 @@ namespace Material3.Avalonia.ColorScience.Conversion;
 /// HCT is defined as: hue/chroma from CAM16, tone equals CIE L*.
 /// This implementation uses an explicit numeric solver to find an in‑gamut sRGB
 /// color for a requested (h, c, L*), following the behavioral contract of Google’s HCT.
-/// </summary>
-/// <summary>
-/// Canonical HCT converter that relies on an existing CAM16 implementation and the Lab converter.
-/// </summary>
-/// Canonical HCT converter that relies on an existing CAM16 implementation and the Lab converter.
 /// </summary>
 public sealed class HctConverter : IHctConverter
 {
@@ -35,12 +29,12 @@ public sealed class HctConverter : IHctConverter
     private const int MaxIterJ = 24;          // iterations for solving CAM16 J to match L*
     private const int MaxIterChroma = 10;     // binary search over chroma
     private const double LstarEps = 0.01;     // acceptable |ΔL*|
-    private const double GamutTol = 1e-7;     // tolerance for RGB in-gamut check (linear)
+    private const double GamutTolerance = 1e-7;     // tolerance for RGB in-gamut check (linear)
 
     public HctColor ArgbToHct(uint argb)
     {
         // 1) sRGB → linear → XYZ (relative to D65)
-        var (R8, G8, B8) = UnpackRgb(argb);
+        var (R8, G8, B8) = Argb32.UnpackRgb(argb);
         var (r, g, b) = Srgb.ToLinear(R8, G8, B8);
         var (X, Y, Z) = Srgb.LinearRgbToXyz(r, g, b);
         var xyz = new XyzColor(X, Y, Z);
@@ -64,7 +58,7 @@ public sealed class HctConverter : IHctConverter
         if (toneLstar >= 100) return 0xFFFFFFFFu;      // pure white
 
         // Clamp inputs into sensible ranges
-        double h = NormalizeHue(hueDegrees);
+        double h = Hue.Normalize(hueDegrees);
         double cTarget = Math.Max(0, chroma);
 
         // Binary-search chroma downward until we can realize the tone in-gamut.
@@ -114,11 +108,11 @@ public sealed class HctConverter : IHctConverter
 
             // XYZ → sRGB (linear)
             var (rl, gl, bl) = Srgb.XyzToLinearRgb(xyz.X, xyz.Y, xyz.Z);
-            if (!InGamut(rl, gl, bl))
+            if (!RgbGamut.InLinearGamut( rl, gl, bl, GamutTolerance))
             {
                 // Not representable at this J — move J toward being darker or lighter
                 // Heuristic: if any channel < 0, lighten; if >1, darken
-                if (rl < -GamutTol || gl < -GamutTol || bl < -GamutTol)
+                if (rl < -GamutTolerance || gl < -GamutTolerance || bl < -GamutTolerance)
                     jLo = jMid; // too dark; try lighter
                 else
                     jHi = jMid; // too light; try darker
@@ -132,7 +126,7 @@ public sealed class HctConverter : IHctConverter
 
             // Quantize to 8-bit for final ARGB
             var (R8, G8, B8) = Srgb.FromLinear(rl, gl, bl);
-            lastArgb = PackRgb(R8, G8, B8);
+            lastArgb = Argb32.PackRgb(R8, G8, B8);
 
             if (Math.Abs(dL) <= LstarEps)
             {
@@ -155,24 +149,7 @@ public sealed class HctConverter : IHctConverter
         var lab = new LabColor(toneLstar, 0.0, 0.0);
         var xyz = _lab.LabToXyz(lab, WhitePoint.D65);
         var (rl, gl, bl) = Srgb.XyzToLinearRgb(xyz.X, xyz.Y, xyz.Z);
-        var (R8, G8, B8) = Srgb.FromLinear(Clamp01(rl), Clamp01(gl), Clamp01(bl));
-        return PackRgb(R8, G8, B8);
+        var (R8, G8, B8) = Srgb.FromLinear(Math.Clamp(rl, 0.0, 1.0), Math.Clamp(gl, 0.0, 1.0), Math.Clamp(bl, 0.0, 1.0));
+        return Argb32.PackRgb(R8, G8, B8);
     }
-
-    // --- helpers -------------------------------------------------------------
-
-    private static double NormalizeHue(double h) => ((h % 360.0) + 360.0) % 360.0;
-
-    private static bool InGamut(double r, double g, double b)
-        => r >= -GamutTol && r <= 1.0 + GamutTol &&
-           g >= -GamutTol && g <= 1.0 + GamutTol &&
-           b >= -GamutTol && b <= 1.0 + GamutTol;
-
-    private static (byte R, byte G, byte B) UnpackRgb(uint argb)
-        => ((byte)((argb >> 16) & 0xFF), (byte)((argb >> 8) & 0xFF), (byte)(argb & 0xFF));
-
-    private static uint PackRgb(byte R, byte G, byte B)
-        => 0xFF000000u | ((uint)R << 16) | ((uint)G << 8) | B;
-
-    private static double Clamp01(double v) => v < 0 ? 0 : (v > 1 ? 1 : v);
 }

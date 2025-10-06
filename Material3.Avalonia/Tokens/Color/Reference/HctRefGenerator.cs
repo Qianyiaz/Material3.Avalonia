@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Material3.Avalonia.ColorScience;
 using Material3.Avalonia.ColorScience.Conversion;
 using Material3.Avalonia.ColorScience.Viewing;
 
@@ -20,10 +21,10 @@ namespace Material3.Avalonia.Tokens.Color.Reference;
 public static class HctRefGenerator
 {
     // Canonical MD3-like chroma targets
-    private const double PrimaryMaxChroma = 48.0; //48.0;
+    private const double PrimaryMaxChroma = 48.0;
     private const double SecondaryChroma  = 16.0;
     private const double TertiaryChroma   = 24.0;
-    private const double NeutralChroma    = 4.0; //6.0;
+    private const double NeutralChroma    = 4.0;
     private const double NeutralVarChroma = 8.0;
     private const double ErrorChroma      = 84.0;
 
@@ -74,7 +75,7 @@ public static class HctRefGenerator
         // Target hues
         double hPri = hSeed;
         double hSec = hSeed;
-        double hTer = NormalizeHue(hSeed + TertiaryHueDelta);
+        double hTer = Hue.Add(hSeed, TertiaryHueDelta);
         double hNeu = hSeed;
         double hNuv = hSeed;
         double hErr = ErrorHue;
@@ -116,6 +117,4 @@ public static class HctRefGenerator
         }
         return new TonalPalette(kind, entries);
     }
-
-    private static double NormalizeHue(double h) => (h % 360.0 + 360.0) % 360.0;
 }

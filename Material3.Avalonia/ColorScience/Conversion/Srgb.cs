@@ -1,4 +1,4 @@
-namespace Material3.Avalonia.Colors.Conversion;
+namespace Material3.Avalonia.ColorScience.Conversion;
 
 internal static class Srgb
 {
@@ -43,21 +43,5 @@ internal static class Srgb
         double g = -0.9692660 * X + 1.8760108 * Y + 0.0415560 * Z;
         double b =  0.0556434 * X - 0.2040259 * Y + 1.0572252 * Z;
         return (r, g, b);
-    }
-
-    // XYZ (D65) ↔ Lab (D65)
-    public static double LstarFromXyz(double X, double Y, double Z)
-    {
-        double fx = F(X / Xr);
-        double fy = F(Y / Yr);
-        double fz = F(Z / Zr);
-        return 116.0 * fy - 16.0;
-
-        static double F(double t)
-        {
-            const double e = 216.0 / 24389.0;   // ≈ 0.008856
-            const double k = 24389.0 / 27.0;    // ≈ 903.3
-            return t > e ? Math.Cbrt(t) : (k * t + 16.0) / 116.0;
-        }
     }
 }
