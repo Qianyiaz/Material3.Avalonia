@@ -1,12 +1,15 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="Material3.Avalonia.Demo.App"
-             RequestedThemeVariant="Default">
+             xmlns:theme="clr-namespace:Material3.Avalonia.Theme;assembly=Material3.Avalonia"
+             x:Class="Material3.Avalonia.Demo.App">
+    <Application.Styles>
+        <theme:MaterialTheme Mode="Light" Variant="TonalSpot" SourceColor="#6750A4" Contrast="Standard" />
+    </Application.Styles>
+    
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceInclude Source="avares://Material3.Avalonia/Tokens/Color/Reference/RefTokens.Design.axaml" />
-                <ResourceInclude Source="avares://Material3.Avalonia/Tokens/Color/System/SysTokens.Design.axaml" />
+                <ResourceInclude Source="avares://Material3.Avalonia/Theme/MaterialThemeResources.axaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

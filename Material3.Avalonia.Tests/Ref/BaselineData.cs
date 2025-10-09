@@ -29,7 +29,7 @@ internal static class BaselineData
     {
         { 0, "#FF000000" }, {10, "#FF31111D"}, {20, "#FF492532"}, {30, "#FF633B48"},
         {40, "#FF7D5260"}, {50, "#FF986977"}, {60, "#FFB58392"}, {70, "#FFD29DAC"},
-        {80, "#FFEFB8C8"}, {90, "#FFFFD8E4"}, {95, "#FFFFECF1"}, {99, "#FFFFFBFA"},
+        {80, "#FFEFB8C8"}, {90, "#FFFFD8E4"}, {95, "#FFFFECF1"}, {99, "#FFFFFBFF"},
         {100,"#FFFFFFFF"}
     };
 
@@ -53,7 +53,7 @@ internal static class BaselineData
     {
         { 0, "#FF000000" }, {10, "#FF410004"}, {20, "#FF690005"}, {30, "#FF93000A"},
         {40, "#FFBA1A1A"}, {50, "#FFDE3730"}, {60, "#FFFF5449"}, {70, "#FFFF897D"},
-        {80, "#FFFFB4AB"}, {90, "#FFFFDAD6"}, {95, "#FFFFEDEA"}, {99, "#FFFFFBFB"},
+        {80, "#FFFFB4AB"}, {90, "#FFFFDAD6"}, {95, "#FFFFEDEA"}, {99, "#FFFFFBFF"},
         {100,"#FFFFFFFF"}
     };
 

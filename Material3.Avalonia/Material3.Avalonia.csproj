@@ -7,15 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="11.3.4" />
+      <PackageReference Include="Avalonia" Version="11.3.7" />
+      <PackageReference Include="Bdziam.DynamicColor" Version="0.0.11" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Tokens\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <AdditionalFiles Include="Tokens\Color\Reference\RefTokens.Design.axaml" />
     </ItemGroup>
 
 </Project>
