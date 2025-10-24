@@ -4,15 +4,21 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="third_party\androidx\compose\material3\LICENSE-APACHE-2.0.txt" Pack="true" PackagePath="\" />
+        <None Include="third_party\androidx\compose\material3\NOTICE.txt" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="11.3.7" />
       <PackageReference Include="Bdziam.DynamicColor" Version="0.0.11" />
     </ItemGroup>
-
+    
     <ItemGroup>
-      <Folder Include="Tokens\" />
+        <AvaloniaResource Include="Assets\Fonts\**\*.ttf" />
     </ItemGroup>
 
 </Project>
