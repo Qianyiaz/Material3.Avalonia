@@ -28,19 +28,19 @@ public class InkRipple : Control
         AvaloniaProperty.Register<InkRipple, double>(nameof(BaseOpacity), 0.1);
     
     public static readonly StyledProperty<TimeSpan> GrowDurationProperty =
-        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(GrowDuration), TimeSpan.FromMilliseconds(1200));
+        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(GrowDuration), TimeSpan.FromMilliseconds(300));
     
     public static readonly StyledProperty<TimeSpan> FadeInDurationProperty =
-        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(FadeInDuration), TimeSpan.FromMilliseconds(90));
+        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(FadeInDuration), TimeSpan.FromMilliseconds(100));
     
     public static readonly StyledProperty<TimeSpan> FadeOutDurationProperty =
-        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(FadeOutDuration), TimeSpan.FromMilliseconds(450));
+        AvaloniaProperty.Register<InkRipple, TimeSpan>(nameof(FadeOutDuration), TimeSpan.FromMilliseconds(200));
     
     public static readonly StyledProperty<RippleStackingMode> StackingModeProperty =
         AvaloniaProperty.Register<InkRipple, RippleStackingMode>(nameof(StackingMode));
-    
+
     public static readonly StyledProperty<Easing?> GrowEasingProperty =
-        AvaloniaProperty.Register<InkRipple, Easing?>(nameof(GrowEasing), new CubicEaseOut());
+        AvaloniaProperty.Register<InkRipple, Easing?>(nameof(GrowEasing), new SplineEasing());
 
     
     public IBrush? Brush
