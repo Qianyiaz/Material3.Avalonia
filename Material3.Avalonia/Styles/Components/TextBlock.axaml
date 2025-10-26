@@ -1,0 +1,280 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:helpers="clr-namespace:Material3.Avalonia.Controls.Helpers">
+    <ControlTheme x:Key="{x:Type TextBlock}"
+                  TargetType="TextBlock">
+        <Style Selector="^[(helpers|Typography.TextStyle)=DisplayLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplayLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplayLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=DisplayMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplayMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplayMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=DisplaySmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplaySmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplaySmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=HeadlineLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=HeadlineMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=HeadlineSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineSmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=TitleLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=TitleMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=TitleSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleSmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=BodyLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodyLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodyLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=BodyMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodyMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodyMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=BodySmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodySmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodySmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=LabelLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=LabelMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=LabelSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelSmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedDisplayLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplayLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplayLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedDisplayMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplayMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplayMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedDisplaySmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleDisplaySmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleDisplaySmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedHeadlineLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedHeadlineMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedHeadlineSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleHeadlineSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleHeadlineSmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedTitleLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedTitleMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedTitleSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleTitleSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleTitleSmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedBodyLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodyLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodyLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedBodyMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodyMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodyMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedBodySmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleBodySmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleBodySmallTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedLabelLarge]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelLargeLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelLargeTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedLabelMedium]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelMediumLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelMediumTracking}" />
+        </Style>
+        
+        <Style Selector="^[(helpers|Typography.TextStyle)=EmphasizedLabelSmall]">
+            <Setter Property="LineHeight" Value="{DynamicResource MdSysTypeScaleLabelSmallLineHeight}" />
+            <Setter Property="LetterSpacing" Value="{DynamicResource MdSysTypeScaleLabelSmallTracking}" />
+        </Style>
+
+        
+
+        
+        
+        <Style Selector="^.display-large">
+            <Setter Property="helpers:Typography.TextStyle" Value="DisplayLarge" />
+        </Style>
+        
+        <Style Selector="^.display-medium">
+            <Setter Property="helpers:Typography.TextStyle" Value="DisplayMedium" />
+        </Style>
+        
+        <Style Selector="^.display-small">
+            <Setter Property="helpers:Typography.TextStyle" Value="DisplaySmall" />
+        </Style>
+        
+        <Style Selector="^.headline-large">
+            <Setter Property="helpers:Typography.TextStyle" Value="HeadlineLarge" />
+        </Style>
+        
+        <Style Selector="^.headline-medium">
+            <Setter Property="helpers:Typography.TextStyle" Value="HeadlineMedium" />
+        </Style>
+        
+        <Style Selector="^.headline-small">
+            <Setter Property="helpers:Typography.TextStyle" Value="HeadlineSmall" />
+        </Style>
+        
+        <Style Selector="^.title-large">
+            <Setter Property="helpers:Typography.TextStyle" Value="TitleLarge" />
+        </Style>
+        
+        <Style Selector="^.title-medium">
+            <Setter Property="helpers:Typography.TextStyle" Value="TitleMedium" />
+        </Style>
+        
+        <Style Selector="^.title-small">
+            <Setter Property="helpers:Typography.TextStyle" Value="TitleSmall" />
+        </Style>
+        
+        <Style Selector="^.body-large">
+            <Setter Property="helpers:Typography.TextStyle" Value="BodyLarge" />
+        </Style>
+        
+        <Style Selector="^.body-medium">
+            <Setter Property="helpers:Typography.TextStyle" Value="BodyMedium" />
+        </Style>
+        
+        <Style Selector="^.body-small">
+            <Setter Property="helpers:Typography.TextStyle" Value="BodySmall" />
+        </Style>
+        
+        <Style Selector="^.label-large">
+            <Setter Property="helpers:Typography.TextStyle" Value="LabelLarge" />
+        </Style>
+        
+        <Style Selector="^.label-medium">
+            <Setter Property="helpers:Typography.TextStyle" Value="LabelMedium" />
+        </Style>
+        
+        <Style Selector="^.label-small">
+            <Setter Property="helpers:Typography.TextStyle" Value="LabelSmall" />
+        </Style>
+        
+        <Style Selector="^.display-large-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedDisplayLarge" />
+        </Style>
+        
+        <Style Selector="^.display-medium-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedDisplayMedium" />
+        </Style>
+        
+        <Style Selector="^.display-small-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedDisplaySmall" />
+        </Style>
+        
+        <Style Selector="^.headline-large-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedHeadlineLarge" />
+        </Style>
+        
+        <Style Selector="^.headline-medium-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedHeadlineMedium" />
+        </Style>
+        
+        <Style Selector="^.headline-small-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedHeadlineSmall" />
+        </Style>
+        
+        <Style Selector="^.title-large-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedTitleLarge" />
+        </Style>
+        
+        <Style Selector="^.title-medium-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedTitleMedium" />
+        </Style>
+        
+        <Style Selector="^.title-small-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedTitleSmall" />
+        </Style>
+        
+        <Style Selector="^.body-large-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedBodyLarge" />
+        </Style>
+        
+        <Style Selector="^.body-medium-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedBodyMedium" />
+        </Style>
+        
+        <Style Selector="^.body-small-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedBodySmall" />
+        </Style>
+        
+        <Style Selector="^.label-large-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedLabelLarge" />
+        </Style>
+        
+        <Style Selector="^.label-medium-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedLabelMedium" />
+        </Style>
+        
+        <Style Selector="^.label-small-emphasized">
+            <Setter Property="helpers:Typography.TextStyle" Value="EmphasizedLabelSmall" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>

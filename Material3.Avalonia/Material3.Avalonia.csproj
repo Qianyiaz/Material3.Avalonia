@@ -5,6 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     </PropertyGroup>
     
     <ItemGroup>
@@ -19,6 +20,10 @@
     
     <ItemGroup>
         <AvaloniaResource Include="Assets\Fonts\**\*.ttf" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Controls\Helpers\" />
     </ItemGroup>
 
 </Project>

@@ -16,7 +16,6 @@ internal static class SystemColorResourceWriter
 
     public static void Rebuild(IResourceDictionary dict, DynamicScheme scheme)
     {
-
         SetRoleColor(dict, nameof(DynamicScheme.Background), scheme.Background);
         SetRoleColor(dict, nameof(DynamicScheme.OnBackground), scheme.OnBackground);
         SetRoleColor(dict, nameof(DynamicScheme.Surface), scheme.Surface);

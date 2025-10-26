@@ -1,0 +1,89 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Variant Elevated -->
+    <StaticResource x:Key="MdCompButtonElevatedContainerBrush" ResourceKey="MdSysSurfaceContainerLowBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedContainerToggleUnselectedBrush" ResourceKey="MdSysSurfaceContainerLowBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedContainerToggleSelectedBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedLabelBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedLabelToggleUnselectedBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedLabelToggleSelectedBrush" ResourceKey="MdSysOnPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedIconToggleUnselectedBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonElevatedIconToggleSelectedBrush" ResourceKey="MdSysOnPrimaryBrush" />
+    
+    <!-- Variant Filled -->
+    <StaticResource x:Key="MdCompButtonFilledContainerBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonFilledContainerToggleUnselectedBrush" ResourceKey="MdSysSurfaceContainerBrush" />
+    <StaticResource x:Key="MdCompButtonFilledContainerToggleSelectedBrush" ResourceKey="MdSysPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonFilledLabelBrush" ResourceKey="MdSysOnPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonFilledLabelToggleUnselectedBrush" ResourceKey="MdSysOnSurfaceVariantBrush" />
+    <StaticResource x:Key="MdCompButtonFilledLabelToggleSelectedBrush" ResourceKey="MdSysOnPrimaryBrush" />
+    <StaticResource x:Key="MdCompButtonFilledIconToggleUnselectedBrush" ResourceKey="MdSysOnSurfaceVariantBrush" />
+    <StaticResource x:Key="MdCompButtonFilledIconToggleSelectedBrush" ResourceKey="MdSysOnPrimaryBrush" />
+    
+    <!-- Variant Tonal -->
+    <StaticResource x:Key="MdCompButtonTonalContainerBrush" ResourceKey="MdSysSecondaryContainerBrush" />
+    <StaticResource x:Key="MdCompButtonTonalContainerToggleUnselectedBrush" ResourceKey="MdSysSecondaryContainerBrush" />
+    <StaticResource x:Key="MdCompButtonTonalContainerToggleSelectedBrush" ResourceKey="MdSysSecondaryBrush" />
+    <StaticResource x:Key="MdCompButtonTonalLabelBrush" ResourceKey="MdSysOnSecondaryContainerBrush" />
+    <StaticResource x:Key="MdCompButtonTonalLabelToggleUnselectedBrush" ResourceKey="MdSysOnSecondaryContainerBrush" />
+    <StaticResource x:Key="MdCompButtonTonalLabelToggleSelectedBrush" ResourceKey="MdSysOnSecondaryBrush" />
+    <StaticResource x:Key="MdCompButtonTonalIconToggleUnselectedBrush" ResourceKey="MdSysOnSecondaryContainerBrush" />
+    <StaticResource x:Key="MdCompButtonTonalIconToggleSelectedBrush" ResourceKey="MdSysOnSecondaryBrush" />
+    
+    <!-- Variant Outlined -->
+    <StaticResource x:Key="MdCompButtonOutlinedOutlineBrush" ResourceKey="MdSysOutlineVariantBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedContainerToggleSelectedBrush" ResourceKey="MdSysInverseSurfaceBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedLabelBrush" ResourceKey="MdSysOnSurfaceVariantBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedLabelToggleUnselectedBrush" ResourceKey="MdSysOnSurfaceVariantBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedLabelToggleSelectedBrush" ResourceKey="MdSysInverseOnSurfaceBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedIconToggleUnselectedBrush" ResourceKey="MdSysOnSurfaceVariantBrush" />
+    <StaticResource x:Key="MdCompButtonOutlinedIconToggleSelectedBrush" ResourceKey="MdSysInverseOnSurfaceBrush" />
+    
+    <!-- Variant Text -->
+    <StaticResource x:Key="MdCompButtonTextLabelBrush" ResourceKey="MdSysPrimaryBrush" />
+    
+    <!-- Size Extra Small -->
+    <x:Double x:Key="MdCompButtonXsContainerHeight">32</x:Double>
+    <Thickness x:Key="MdCompButtonXsOutlineWidth">1</Thickness>
+    <x:Double x:Key="MdCompButtonXsIconSize">20</x:Double>
+    <Thickness x:Key="MdCompButtonXsPadding">12 0</Thickness>
+    <x:Double x:Key="MdCompButtonXsBetweenIconLabelSpace">8</x:Double>
+    
+    <!-- Size Small -->
+    <x:Double x:Key="MdCompButtonSmContainerHeight">40</x:Double>
+    <Thickness x:Key="MdCompButtonSmOutlineWidth">1</Thickness>
+    <x:Double x:Key="MdCompButtonSmIconSize">20</x:Double>
+    <Thickness x:Key="MdCompButtonSmPadding">16 0</Thickness>
+    <x:Double x:Key="MdCompButtonSmBetweenIconLabelSpace">8</x:Double>
+    
+    <!-- Size Medium -->
+    <x:Double x:Key="MdCompButtonMdContainerHeight">56</x:Double>
+    <Thickness x:Key="MdCompButtonMdOutlineWidth">1</Thickness>
+    <x:Double x:Key="MdCompButtonMdIconSize">24</x:Double>
+    <Thickness x:Key="MdCompButtonMdPadding">24 0</Thickness>
+    <x:Double x:Key="MdCompButtonMdBetweenIconLabelSpace">8</x:Double>
+    
+    <!-- Size Large -->
+    <x:Double x:Key="MdCompButtonLgContainerHeight">96</x:Double>
+    <Thickness x:Key="MdCompButtonLgOutlineWidth">2</Thickness>
+    <x:Double x:Key="MdCompButtonLgIconSize">32</x:Double>
+    <Thickness x:Key="MdCompButtonLgPadding">48 0</Thickness>
+    <x:Double x:Key="MdCompButtonLgBetweenIconLabelSpace">12</x:Double>
+    
+    <!-- Size Extra Large -->
+    <x:Double x:Key="MdCompButtonXlContainerHeight">136</x:Double>
+    <Thickness x:Key="MdCompButtonXlOutlineWidth">3</Thickness>
+    <x:Double x:Key="MdCompButtonXlIconSize">40</x:Double>
+    <Thickness x:Key="MdCompButtonXlPadding">64 0</Thickness>
+    <x:Double x:Key="MdCompButtonXlBetweenIconLabelSpace">16</x:Double>
+    
+    <StaticResource x:Key="MdCompButtonDisabledContainerBrush" ResourceKey="MdSysOnSurfaceBrush" />
+    <StaticResource x:Key="MdCompButtonDisabledOutlineBrush" ResourceKey="MdSysOutlineVariantBrush" />
+    <x:Double x:Key="MdCompButtonDisabledContainerOpacity">0.1</x:Double>
+    <StaticResource x:Key="MdCompButtonDisabledLabelBrush" ResourceKey="MdSysOnSurfaceBrush" />
+    <x:Double x:Key="MdCompButtonDisabledLabelOpacity">0.38</x:Double>
+    
+    <Thickness x:Key="MdCompButtonFocusRingThickness">3</Thickness>
+    <Thickness x:Key="MdCompButtonFocusRingOffset">2</Thickness>
+    <StaticResource x:Key="MdCompButtonFocusRingBrush" ResourceKey="MdSysSecondaryBrush" />
+</ResourceDictionary>

@@ -7,6 +7,7 @@ using Bdziam.UI.Theming.MaterialColors.ColorSpace;
 using Bdziam.UI.Theming.MaterialColors.DynamicColor;
 using Bdziam.UI.Theming.MaterialColors.Scheme;
 using Material3.Avalonia.Tokens.Color;
+using Material3.Avalonia.Tokens.Elevation;
 
 namespace Material3.Avalonia.Theme;
 
@@ -104,7 +105,8 @@ public class MaterialTheme : Styles
         var scheme = DynamicSchemeMap.GetDynamicScheme(hct, isDark, Options.Contrast.Level, Options.Variant);
         
         SystemColorResourceWriter.Rebuild(Resources, scheme);
-
+        ShadowResourceWriter.Rebuild(Resources, scheme);
+        
         Resources["Material.DynamicScheme"] = scheme;
         Resources["Material.IsDark"] = isDark;
         Resources["Material.ContrastLevel"] = Options.Contrast.Level;

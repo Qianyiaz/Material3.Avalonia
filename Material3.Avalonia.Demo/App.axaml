@@ -3,6 +3,7 @@
              xmlns:theme="clr-namespace:Material3.Avalonia.Theme;assembly=Material3.Avalonia"
              x:Class="Material3.Avalonia.Demo.App">
     <Application.Styles>
+        <StyleInclude Source="avares://Material3.Avalonia/Theme/MaterialThemeStyles.axaml" />
         <theme:MaterialTheme Mode="Light" Variant="TonalSpot" SourceColor="#6750A4" Contrast="Standard" />
     </Application.Styles>
     
@@ -10,6 +11,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceInclude Source="avares://Material3.Avalonia/Theme/MaterialThemeResources.axaml" />
+                <MergeResourceInclude Source="avares://Material3.Avalonia.Demo/Assets/Icons.axaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
