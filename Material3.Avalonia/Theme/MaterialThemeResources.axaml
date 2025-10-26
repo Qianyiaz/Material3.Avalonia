@@ -1,12 +1,9 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Color/System.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Color/Component/Index.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Shape/System.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/State.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Typography/Reference.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Typography/System.axaml" />
-        <MergeResourceInclude Source="avares://Material3.Avalonia/Styles/Components/Index.axaml" />
+        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Reference/ReferenceTokens.axaml" />
+        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/System/SystemTokens.axaml" />
+        <MergeResourceInclude Source="avares://Material3.Avalonia/Tokens/Component/ComponentTokens.axaml" />
+        <MergeResourceInclude Source="avares://Material3.Avalonia/Styles/Components/ComponentThemes.axaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Media;
 using Bdziam.UI.Theming.MaterialColors.DynamicColor;
 
-namespace Material3.Avalonia.Tokens.Elevation;
+namespace Material3.Avalonia.Tokens.System;
 
 internal static class ShadowResourceWriter
 {
@@ -17,12 +17,12 @@ internal static class ShadowResourceWriter
     private static void Upsert(IResourceDictionary dict, string key, BoxShadows value)
         => dict[key] = value;
 
-    private static global::Avalonia.Media.Color WithAlpha(global::Avalonia.Media.Color color, double opacity)
-        => global::Avalonia.Media.Color.FromArgb((byte)Math.Clamp(Math.Round(255 * opacity), 0, 255), color.R, color.G, color.B);
+    private static Color WithAlpha(Color color, double opacity)
+        => Color.FromArgb((byte)Math.Clamp(Math.Round(255 * opacity), 0, 255), color.R, color.G, color.B);
 
     public static void Rebuild(IResourceDictionary dict, DynamicScheme scheme)
     {
-        var color = global::Avalonia.Media.Color.FromUInt32(scheme.Shadow);
+        var color = Color.FromUInt32(scheme.Shadow);
         var keyColor = WithAlpha(color, KeyOpacity);
         var ambientColor = WithAlpha(color, AmbientOpacity);
         

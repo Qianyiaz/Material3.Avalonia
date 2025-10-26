@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Bdziam.UI.Theming.MaterialColors.DynamicColor;
 
-namespace Material3.Avalonia.Tokens.Color;
+namespace Material3.Avalonia.Tokens.System;
 
-internal static class SystemColorResourceWriter
+internal static class ColorResourceWriter
 {
     private static string BuildSysColorKey(string roleName)
         => $"MdSys{roleName}Color";

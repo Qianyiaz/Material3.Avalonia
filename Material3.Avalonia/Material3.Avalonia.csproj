@@ -25,5 +25,9 @@
     <ItemGroup>
       <Folder Include="Controls\Helpers\" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <AdditionalFiles Include="Tokens\Component\Button.axaml" />
+    </ItemGroup>
 
 </Project>

@@ -23,7 +23,7 @@ public sealed class MotionScheme
         _ => EffectsDefault
     };
 
-    public static MotionScheme Standard => new()
+    public static readonly MotionScheme Standard = new()
     {
         SpatialFast = new SpringToken(1400, 0.9),
         SpatialDefault = new SpringToken(700, 0.9),
@@ -34,7 +34,7 @@ public sealed class MotionScheme
         EffectsSlow = new SpringToken(800, 1.0)
     };
 
-    public static MotionScheme Expressive => new()
+    public static readonly MotionScheme Expressive = new()
     {
         SpatialFast = new SpringToken(800, 0.6),
         SpatialDefault = new SpringToken(380, 0.8),

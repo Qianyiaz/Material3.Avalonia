@@ -1,4 +1,3 @@
-using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Threading;
 using Material3.Avalonia.Motion.Internal;
@@ -38,13 +37,6 @@ public abstract class SpringTransitionBase<T, TAdapter> : InterpolatingTransitio
     private bool _recomputePosted;
     private double _cachedK, _cachedZ, _cachedAutoSeconds;
     private MotionStyle _cachedStyle;
-
-    static SpringTransitionBase()
-    {
-        MotionSettings.SchemeProperty.Changed
-            .AddClassHandler<SpringTransitionBase<T, TAdapter>>(
-                (x, e) => x.MarkDurationDirty());
-    }
     
     protected SpringTransitionBase()
     {
@@ -71,7 +63,7 @@ public abstract class SpringTransitionBase<T, TAdapter> : InterpolatingTransitio
     
     private void RecomputeAutoDuration()
     {
-        var scheme = MotionSettings.Resolve(this);
+        var scheme = MotionSettings.GlobalScheme;
         var token  = scheme.Resolve(Style, Speed);
         var k = Stiffness ?? token.Stiffness;
         var z = Damping   ?? token.Damping;

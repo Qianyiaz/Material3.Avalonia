@@ -6,8 +6,8 @@ using Avalonia.Styling;
 using Bdziam.UI.Theming.MaterialColors.ColorSpace;
 using Bdziam.UI.Theming.MaterialColors.DynamicColor;
 using Bdziam.UI.Theming.MaterialColors.Scheme;
-using Material3.Avalonia.Tokens.Color;
-using Material3.Avalonia.Tokens.Elevation;
+using Material3.Avalonia.Motion;
+using Material3.Avalonia.Tokens.System;
 
 namespace Material3.Avalonia.Theme;
 
@@ -24,6 +24,9 @@ public class MaterialTheme : Styles
     
     public static readonly StyledProperty<Contrast> ContrastProperty =
         AvaloniaProperty.Register<MaterialTheme, Contrast>(nameof(Contrast), MaterialThemeOptions.Defaults.Contrast);
+    
+    public static readonly StyledProperty<MotionSchemeKind?> MotionSchemeProperty =
+        AvaloniaProperty.Register<MaterialTheme, MotionSchemeKind?>(nameof(MotionScheme), MaterialThemeOptions.Defaults.MotionScheme);
 
     public Color SourceColor
     {
@@ -49,15 +52,22 @@ public class MaterialTheme : Styles
         set => SetValue(ContrastProperty, value);
     }
 
+    public MotionSchemeKind? MotionScheme
+    {
+        get => GetValue(MotionSchemeProperty);
+        set => SetValue(MotionSchemeProperty, value);
+    }
+
     public MaterialThemeOptions Options
     {
-        get => new(SourceColor, Variant, Mode, Contrast);
+        get => new(SourceColor, Variant, Mode, Contrast, MotionScheme);
         set
         {
             SourceColor = value.SourceColor;
             Variant = value.Variant;
             Mode = value.Mode;
             Contrast = value.Contrast;
+            MotionScheme = value.MotionScheme;
         }
     }
 
@@ -70,7 +80,11 @@ public class MaterialTheme : Styles
         
         TryAdoptSystemAccent();
         
-        OwnerChanged += (_, _) => UpdateSystemSubscription();
+        OwnerChanged += (_, _) =>
+        {
+            UpdateSystemSubscription();
+            ApplyMotionSettings();
+        };
         
         _platformSettings = Application.Current?.PlatformSettings;
         
@@ -104,7 +118,7 @@ public class MaterialTheme : Styles
         var hct = Hct.FromInt(Options.SourceColor.ToUInt32());
         var scheme = DynamicSchemeMap.GetDynamicScheme(hct, isDark, Options.Contrast.Level, Options.Variant);
         
-        SystemColorResourceWriter.Rebuild(Resources, scheme);
+        ColorResourceWriter.Rebuild(Resources, scheme);
         ShadowResourceWriter.Rebuild(Resources, scheme);
         
         Resources["Material.DynamicScheme"] = scheme;
@@ -175,5 +189,27 @@ public class MaterialTheme : Styles
             || change.Property == ModeProperty
             || change.Property == ContrastProperty)
             Rebuild();
+
+        if (change.Property == MotionSchemeProperty && change.NewValue != change.OldValue)
+        {
+            ApplyMotionSettings();
+        }
+    }
+
+    private void ApplyMotionSettings()
+    {
+        if (MotionScheme is null)
+            return;
+        
+        var motionScheme = MotionScheme switch
+        {
+            MotionSchemeKind.Standard => Motion.MotionScheme.Standard,
+            MotionSchemeKind.Expressive => Motion.MotionScheme.Expressive,
+            _ => MotionSettings.GlobalScheme
+        };
+        
+        MotionSettings.GlobalScheme = motionScheme;
+        
+        Resources["Material.MotionSchemeKind"] = Options.MotionScheme;
     }
 }

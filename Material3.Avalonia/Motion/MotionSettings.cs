@@ -51,12 +51,4 @@ public static class MotionSettings
     }
 
     public static bool ReduceMotion { get; set; } = false;
-
-    public static readonly AttachedProperty<MotionScheme?> SchemeProperty =
-        AvaloniaProperty.RegisterAttached<AvaloniaObject, MotionScheme?>("Scheme", typeof(MotionSettings));
-    
-    public static void SetScheme(AvaloniaObject obj, MotionScheme? value) => obj.SetValue(SchemeProperty, value);
-    public static MotionScheme? GetScheme(AvaloniaObject obj) => obj.GetValue(SchemeProperty);
-    
-    public static MotionScheme Resolve(AvaloniaObject obj) => GetScheme(obj) ?? GlobalScheme;
 }

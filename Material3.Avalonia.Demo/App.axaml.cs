@@ -18,8 +18,6 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            MotionSettings.GlobalScheme = MotionScheme.Standard;
-            
             desktop.MainWindow = new MainWindow
             {
                 DataContext = new MainWindowViewModel(),
