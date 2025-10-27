@@ -25,6 +25,8 @@
             </Border>
             
             <views:Shapes HorizontalAlignment="Center" IsVisible="False" />
+            
+            <views:Cards HorizontalAlignment="Center" IsVisible="True" />
         </StackPanel>
     </ScrollViewer>
 </Window>
