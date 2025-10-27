@@ -6,24 +6,34 @@
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <IsPackable>true</IsPackable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+        <PackageId>Material3.Avalonia</PackageId>
+        <Authors>klorman</Authors>
+        <Description>A modern Material Design 3 theme library for Avalonia applications</Description>
+        <PackageTags>avalonia;material;ui;ux;xaml;theme</PackageTags>
     </PropertyGroup>
-    
+
     <ItemGroup>
-        <None Include="third_party\androidx\compose\material3\LICENSE-APACHE-2.0.txt" Pack="true" PackagePath="\" />
-        <None Include="third_party\androidx\compose\material3\NOTICE.txt" Pack="true" PackagePath="\" />
+        <PackageReference Include="Avalonia" Version="11.3.7"/>
+        <PackageReference Include="Bdziam.DynamicColor" Version="0.0.11"/>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="11.3.7" />
-      <PackageReference Include="Bdziam.DynamicColor" Version="0.0.11" />
+        <AvaloniaResource Include="Assets\Fonts\**\*.ttf"/>
     </ItemGroup>
-    
+
     <ItemGroup>
-        <AvaloniaResource Include="Assets\Fonts\**\*.ttf" />
+        <AdditionalFiles Include="Tokens\Component\Button.axaml"/>
     </ItemGroup>
-    
-    <ItemGroup>
-      <AdditionalFiles Include="Tokens\Component\Button.axaml" />
-    </ItemGroup>
+
+    <PropertyGroup Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">
+        <IsAotCompatible>true</IsAotCompatible>
+        <IsTrimmable>true</IsTrimmable>
+    </PropertyGroup>
 
 </Project>

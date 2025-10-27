@@ -1,0 +1,21 @@
+<Project>
+    <PropertyGroup Condition="'$(IsPackable)'=='true'">
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/klorman/Material3.Avalonia</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/klorman/Material3.Avalonia</PackageProjectUrl>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EnablePackageValidation>true</EnablePackageValidation>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(IsPackable)'=='true'">
+        <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath=""/>
+        <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath=""/>
+        <None Include="$(MSBuildThisFileDirectory)THIRD-PARTY-NOTICES.txt"
+              Pack="true" PackagePath=""
+              Condition="Exists('$(MSBuildThisFileDirectory)THIRD-PARTY-NOTICES.txt')"/>
+        <None Include="$(MSBuildThisFileDirectory)third_party\**\*.txt"
+              Pack="true" PackagePath="third_party\"/>
+    </ItemGroup>
+</Project>
