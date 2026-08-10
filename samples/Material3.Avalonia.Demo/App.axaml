@@ -1,0 +1,19 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:theme3="using:Material3.Avalonia.Theme"
+             xmlns:theme2="using:Material.Styles.Themes"
+             x:Class="Material3.Avalonia.Demo.App">
+    <Application.Styles>
+        <theme2:MaterialTheme PrimaryColor="Purple" SecondaryColor="Lime" />
+        <theme3:MaterialTheme Mode="Light" Variant="TonalSpot" SourceColor="#6750A4" Contrast="Standard"
+                             MotionScheme="Standard" />
+    </Application.Styles>
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <MergeResourceInclude Source="avares://Material3.Avalonia.Demo/Assets/Icons.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/external/">
+    <Project Path="external/Bdziam.DynamicColor/src/Bdziam.DynamicColor.csproj" />
+  </Folder>
+  <Folder Name="/Samples/">
+    <Project Path="samples/Material3.Avalonia.Demo.Desktop/Material3.Avalonia.Demo.Desktop.csproj" />
+    <Project Path="samples/Material3.Avalonia.Demo/Material3.Avalonia.Demo.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE.md" />
+    <File Path="README.md" />
+    <File Path="src/Directory.Build.props" />
+  </Folder>
+  <Project Path="src/Material3.Avalonia/Material3.Avalonia.csproj" />
+</Solution>

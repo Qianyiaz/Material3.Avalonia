@@ -1,0 +1,67 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Display -->
+    <x:Double x:Key="MdSysTypeScaleDisplayLargeSize">57</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplayLargeLineHeight">64</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplayLargeTracking">-0.25</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleDisplayMediumSize">45</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplayMediumLineHeight">52</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplayMediumTracking">0</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleDisplaySmallSize">36</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplaySmallLineHeight">44</x:Double>
+    <x:Double x:Key="MdSysTypeScaleDisplaySmallTracking">0</x:Double>
+
+    <!-- Headline -->
+    <x:Double x:Key="MdSysTypeScaleHeadlineLargeSize">32</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineLargeLineHeight">40</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineLargeTracking">0</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleHeadlineMediumSize">28</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineMediumLineHeight">36</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineMediumTracking">0</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleHeadlineSmallSize">24</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineSmallLineHeight">32</x:Double>
+    <x:Double x:Key="MdSysTypeScaleHeadlineSmallTracking">0</x:Double>
+
+    <!-- Title -->
+    <x:Double x:Key="MdSysTypeScaleTitleLargeSize">22</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleLargeLineHeight">28</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleLargeTracking">0</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleTitleMediumSize">16</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleMediumLineHeight">24</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleMediumTracking">0.15</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleTitleSmallSize">14</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleSmallLineHeight">20</x:Double>
+    <x:Double x:Key="MdSysTypeScaleTitleSmallTracking">0.1</x:Double>
+
+    <!-- Body -->
+    <x:Double x:Key="MdSysTypeScaleBodyLargeSize">16</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodyLargeLineHeight">24</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodyLargeTracking">0.5</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleBodyMediumSize">14</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodyMediumLineHeight">20</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodyMediumTracking">0.25</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleBodySmallSize">12</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodySmallLineHeight">16</x:Double>
+    <x:Double x:Key="MdSysTypeScaleBodySmallTracking">0.4</x:Double>
+
+    <!-- Label -->
+    <x:Double x:Key="MdSysTypeScaleLabelLargeSize">14</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelLargeLineHeight">20</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelLargeTracking">0.1</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleLabelMediumSize">12</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelMediumLineHeight">16</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelMediumTracking">0.5</x:Double>
+
+    <x:Double x:Key="MdSysTypeScaleLabelSmallSize">11</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelSmallLineHeight">16</x:Double>
+    <x:Double x:Key="MdSysTypeScaleLabelSmallTracking">0.5</x:Double>
+</ResourceDictionary>

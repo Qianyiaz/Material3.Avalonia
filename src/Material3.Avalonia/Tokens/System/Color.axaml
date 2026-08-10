@@ -1,0 +1,90 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Surface / Background -->
+    <SolidColorBrush x:Key="MdSysBackgroundBrush" Color="{DynamicResource MdSysBackgroundColor}" />
+    <SolidColorBrush x:Key="MdSysOnBackgroundBrush" Color="{DynamicResource MdSysOnBackgroundColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceBrush" Color="{DynamicResource MdSysSurfaceColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceDimBrush" Color="{DynamicResource MdSysSurfaceDimColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceBrightBrush" Color="{DynamicResource MdSysSurfaceBrightColor}" />
+
+    <SolidColorBrush x:Key="MdSysSurfaceContainerLowestBrush"
+                     Color="{DynamicResource MdSysSurfaceContainerLowestColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceContainerLowBrush" Color="{DynamicResource MdSysSurfaceContainerLowColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceContainerBrush" Color="{DynamicResource MdSysSurfaceContainerColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceContainerHighBrush" Color="{DynamicResource MdSysSurfaceContainerHighColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceContainerHighestBrush"
+                     Color="{DynamicResource MdSysSurfaceContainerHighestColor}" />
+
+    <SolidColorBrush x:Key="MdSysOnSurfaceBrush" Color="{DynamicResource MdSysOnSurfaceColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceVariantBrush" Color="{DynamicResource MdSysSurfaceVariantColor}" />
+    <SolidColorBrush x:Key="MdSysOnSurfaceVariantBrush" Color="{DynamicResource MdSysOnSurfaceVariantColor}" />
+
+    <SolidColorBrush x:Key="MdSysInverseSurfaceBrush" Color="{DynamicResource MdSysInverseSurfaceColor}" />
+    <SolidColorBrush x:Key="MdSysInverseOnSurfaceBrush" Color="{DynamicResource MdSysInverseOnSurfaceColor}" />
+
+    <SolidColorBrush x:Key="MdSysOutlineBrush" Color="{DynamicResource MdSysOutlineColor}" />
+    <SolidColorBrush x:Key="MdSysOutlineVariantBrush" Color="{DynamicResource MdSysOutlineVariantColor}" />
+
+    <SolidColorBrush x:Key="MdSysShadowBrush" Color="{DynamicResource MdSysShadowColor}" />
+    <SolidColorBrush x:Key="MdSysScrimBrush" Color="{DynamicResource MdSysScrimColor}" />
+    <SolidColorBrush x:Key="MdSysSurfaceTintBrush" Color="{DynamicResource MdSysSurfaceTintColor}" />
+
+    <!-- Primary -->
+    <SolidColorBrush x:Key="MdSysPrimaryBrush" Color="{DynamicResource MdSysPrimaryColor}" />
+    <SolidColorBrush x:Key="MdSysOnPrimaryBrush" Color="{DynamicResource MdSysOnPrimaryColor}" />
+    <SolidColorBrush x:Key="MdSysPrimaryContainerBrush" Color="{DynamicResource MdSysPrimaryContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnPrimaryContainerBrush" Color="{DynamicResource MdSysOnPrimaryContainerColor}" />
+    <SolidColorBrush x:Key="MdSysInversePrimaryBrush" Color="{DynamicResource MdSysInversePrimaryColor}" />
+
+    <!-- Secondary -->
+    <SolidColorBrush x:Key="MdSysSecondaryBrush" Color="{DynamicResource MdSysSecondaryColor}" />
+    <SolidColorBrush x:Key="MdSysOnSecondaryBrush" Color="{DynamicResource MdSysOnSecondaryColor}" />
+    <SolidColorBrush x:Key="MdSysSecondaryContainerBrush" Color="{DynamicResource MdSysSecondaryContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnSecondaryContainerBrush" Color="{DynamicResource MdSysOnSecondaryContainerColor}" />
+
+    <!-- Tertiary -->
+    <SolidColorBrush x:Key="MdSysTertiaryBrush" Color="{DynamicResource MdSysTertiaryColor}" />
+    <SolidColorBrush x:Key="MdSysOnTertiaryBrush" Color="{DynamicResource MdSysOnTertiaryColor}" />
+    <SolidColorBrush x:Key="MdSysTertiaryContainerBrush" Color="{DynamicResource MdSysTertiaryContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnTertiaryContainerBrush" Color="{DynamicResource MdSysOnTertiaryContainerColor}" />
+
+    <!-- Error -->
+    <SolidColorBrush x:Key="MdSysErrorBrush" Color="{DynamicResource MdSysErrorColor}" />
+    <SolidColorBrush x:Key="MdSysOnErrorBrush" Color="{DynamicResource MdSysOnErrorColor}" />
+    <SolidColorBrush x:Key="MdSysErrorContainerBrush" Color="{DynamicResource MdSysErrorContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnErrorContainerBrush" Color="{DynamicResource MdSysOnErrorContainerColor}" />
+
+    <!-- Extra semantics -->
+    <SolidColorBrush x:Key="MdSysWarningBrush" Color="{DynamicResource MdSysWarningColor}" />
+    <SolidColorBrush x:Key="MdSysOnWarningBrush" Color="{DynamicResource MdSysOnWarningColor}" />
+    <SolidColorBrush x:Key="MdSysWarningContainerBrush" Color="{DynamicResource MdSysWarningContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnWarningContainerBrush" Color="{DynamicResource MdSysOnWarningContainerColor}" />
+
+    <SolidColorBrush x:Key="MdSysInfoBrush" Color="{DynamicResource MdSysInfoColor}" />
+    <SolidColorBrush x:Key="MdSysOnInfoBrush" Color="{DynamicResource MdSysOnInfoColor}" />
+    <SolidColorBrush x:Key="MdSysInfoContainerBrush" Color="{DynamicResource MdSysInfoContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnInfoContainerBrush" Color="{DynamicResource MdSysOnInfoContainerColor}" />
+
+    <SolidColorBrush x:Key="MdSysSuccessBrush" Color="{DynamicResource MdSysSuccessColor}" />
+    <SolidColorBrush x:Key="MdSysOnSuccessBrush" Color="{DynamicResource MdSysOnSuccessColor}" />
+    <SolidColorBrush x:Key="MdSysSuccessContainerBrush" Color="{DynamicResource MdSysSuccessContainerColor}" />
+    <SolidColorBrush x:Key="MdSysOnSuccessContainerBrush" Color="{DynamicResource MdSysOnSuccessContainerColor}" />
+
+    <!-- Fixed -->
+    <SolidColorBrush x:Key="MdSysPrimaryFixedBrush" Color="{DynamicResource MdSysPrimaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysPrimaryFixedDimBrush" Color="{DynamicResource MdSysPrimaryFixedDimColor}" />
+    <SolidColorBrush x:Key="MdSysOnPrimaryFixedBrush" Color="{DynamicResource MdSysOnPrimaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysOnPrimaryFixedVariantBrush" Color="{DynamicResource MdSysOnPrimaryFixedVariantColor}" />
+
+    <SolidColorBrush x:Key="MdSysSecondaryFixedBrush" Color="{DynamicResource MdSysSecondaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysSecondaryFixedDimBrush" Color="{DynamicResource MdSysSecondaryFixedDimColor}" />
+    <SolidColorBrush x:Key="MdSysOnSecondaryFixedBrush" Color="{DynamicResource MdSysOnSecondaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysOnSecondaryFixedVariantBrush"
+                     Color="{DynamicResource MdSysOnSecondaryFixedVariantColor}" />
+
+    <SolidColorBrush x:Key="MdSysTertiaryFixedBrush" Color="{DynamicResource MdSysTertiaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysTertiaryFixedDimBrush" Color="{DynamicResource MdSysTertiaryFixedDimColor}" />
+    <SolidColorBrush x:Key="MdSysOnTertiaryFixedBrush" Color="{DynamicResource MdSysOnTertiaryFixedColor}" />
+    <SolidColorBrush x:Key="MdSysOnTertiaryFixedVariantBrush"
+                     Color="{DynamicResource MdSysOnTertiaryFixedVariantColor}" />
+</ResourceDictionary>
