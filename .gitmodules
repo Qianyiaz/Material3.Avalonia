@@ -1,0 +1,3 @@
+[submodule "external/Bdziam.DynamicColor"]
+	path = external/Bdziam.DynamicColor
+	url = https://github.com/pmikstacki/Bdziam.DynamicColor.git
